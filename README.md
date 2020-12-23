@@ -1,4 +1,6 @@
-Proyecto Web TareasUFPS
+**Proyecto Web TareasUFPS**
+
+Este proyecto se realiza como trabajo final de la materia Computacion en la Nube correspondiente al Pensum 115 del programa Ingeniería de Sistemas de la Universidad Francisco de Paula Santander.
 
 ***Desarrollo***
 - Angel Leonardo Vivas Andrade
@@ -6,10 +8,9 @@ GitLab: https://gitlab.com/angelleonardovian
 
 - Ana Gabriela Cardenas Omaña
 GitLab: https://gitlab.com/anagabrielacaom 
-Estudiantes 8vo. semestre Ingeniería de Sistemas.
 
+_Estudiantes 8vo. semestre Ingeniería de Sistemas | 2020_
 
-Este proyecto se realiza como trabajo final de la materia Computacion en la Nube correspondiente al Pensum 115 del programa Ingeniería de Sistemas de la Universidad Francisco de Paula Santander.
 
 
 ***Lenguaje de Programación***
