@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es-CO">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="Tareas UFPS">
+        <title>Inicio</title>
+        <link rel="stylesheet" href="css/nicepage.css" media="screen">
+        <link rel="stylesheet" href="css/Inicio.css" media="screen">
+        <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+        <link rel="icon" href="images/favicon.png">
+
+        <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+        <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi:400">
+
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="190238485681-a7f3s6ucvs1k374ln04itv2h8c0a5gqk.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+        <!-- BOOTSTRAP 4.5 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+              integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+        <!--QUERY-->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+        <script type="application/ld+json">{
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "Site1",
+            "url": "index.html",
+            "logo": "images/favicon.png"
+            }</script>
+        <meta property="og:title" content="Inicio">
+        <meta property="og:type" content="website">
+        <meta name="theme-color" content="#478ac9">
+        <link rel="canonical" href="index.html">
+        <meta property="og:url" content="index.html">
+    </head>
+    <body data-home-page="index.html" data-home-page-title="Inicio" class="u-body u-overlap u-overlap-contrast u-overlap-transparent"><header class="u-align-center-xs u-border-1 u-border-grey-25 u-clearfix u-custom-color-1 u-header u-sticky u-header" id="sec-eeca"><div class="u-clearfix u-sheet u-sheet-1">
+                <a href="/" class="u-image u-logo u-image-1" data-image-width="100" data-image-height="100">
+                    <img src="images/favicon.png" class="u-logo-image u-logo-image-1" data-image-width="80">
+                </a>
+
+                <!--navbar-->
+                <nav class="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1" data-responsive-from="MD">
+                    <div class="menu-collapse" style="font-size: 1.125rem; letter-spacing: 0px; font-weight: 700;">
+                        <a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-border-no-left u-border-no-right u-border-no-top u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-2-base" href="#">
+                            <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+                            </symbol>
+                            </defs></svg>
+                        </a>
+                    </div>
+                    <div class="u-custom-menu u-nav-container">
+                        <ul class="u-nav u-spacing-20 u-unstyled u-nav-1">
+                            <!--button sesion-->
+                            <li class="u-nav-item">
+                                <a data-onFailure="fail"    data-onsuccess="onSignIn" data-theme="dark" data-page-id="915309663" class="g-signin2 u-btn-1">Iniciar sesión</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-2-base" href="/" style="padding: 10px 28px;">Inicio</a>
+                            </li>
+                            <li class="u-nav-item">
+                                <a id="btn-perfil" class="u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-nav-link u-text-active-white u-text-body-alt-color u-text-hover-palette-2-base" style="padding: 10px 28px;">Perfil</a>
+                                <div class="u-nav-popup">
+                                    <ul class="u-h-spacing-11 u-nav u-unstyled u-v-spacing-16 u-nav-2">
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-palette-1-light-1 u-text-active-white u-text-hover-palette-2-base" href="perfil/">Mis documentos</a>
+                                        </li>
+
+                                        <li class="u-nav-item"><a class="u-button-style u-nav-link u-palette-1-light-1 u-text-active-white u-text-hover-palette-2-base" href="#" onclick="onLogout()">Cerrar sesión</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="u-custom-menu u-nav-container-collapse">
+                        <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-70 u-sidenav">
+                            <div class="u-sidenav-overflow">
+                                <div class="u-menu-close"></div>
+                                <ul class="u-align-center u-nav u-popupmenu-items u-spacing-1 u-text-active-white u-text-hover-palette-2-base u-unstyled u-nav-3">
+                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="/" style="padding: 10px 28px;">Inicio</a></li>
+                                    <li class="u-nav-item">
+                                        <a class="u-button-style u-nav-link" style="padding: 10px 28px;">Perfil</a>
+                                        <div class="u-nav-popup">
+                                            <ul class="u-h-spacing-11 u-nav u-unstyled u-v-spacing-16 u-nav-4">
+                                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="perfil/">Mis documentos</a></li>
+
+                                                <li class="u-nav-item"><a class="u-button-style u-nav-link" href="#" onclick="onLogout()">Cerrar sesión</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="u-black u-menu-overlay u-opacity u-opacity-35"></div>
+                    </div>
+                </nav>
+
+
+                <!--<a href="#" onclick="onLogout()">Cerrar Sesion</a>-->                
+                <!--<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>-->
+                <!--                u-btn u-btn-round u-button-style u-hover-palette-2-base u-palette-2-base u-radius-6 
+                                u-text-active-palette-2-light-1 u-text-hover-white u-text-white -->
+                <!--                <a data-onsuccess="onSignIn" data-theme="dark" data-page-id="915309663" 
+                                   class="g-signin2 u-btn-1">Iniciar sesión</a>-->
+            </div>
+        </header>
+
+        <!--page-->
+        <section class="u-clearfix u-image u-section-1" id="carousel_6a8f" data-image-width="6000" data-image-height="2236">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <div class="u-align-left u-container-style u-expanded-width-xs u-group u-palette-1-base u-group-1">
+                    <div class="u-container-layout u-container-layout-1">
+                        <h1 class="u-custom-font u-text u-text-1">Tareas UFPS</h1>
+                        <p class="u-large-text u-text u-text-default u-text-variant u-text-2">Espacio para compartir tareas, trabajos, actividades<br>y documentos academicos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--seccion busqueda-->
+        <section class="u-align-center u-clearfix u-image u-shading u-section-2" id="sec-f3dc" data-image-width="1280" data-image-height="853">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <h2 class="u-text u-text-1">Busqueda de documentos</h2>
+                <div class="u-form u-form-1">
+                    <div class="u-form-group u-form-name">
+                        <label for="name-ef64" class="u-form-control-hidden u-label u-text-body-color u-label-1">Name</label>
+                        <input type="text" placeholder="Titulo documento" id="titulodoc" name="titulodoc" class="u-border-2 u-border-grey-30 u-input u-input-rectangle u-text-body-color u-input-1">
+                    </div><br>
+                    <div class="u-form-group u-form-select u-form-group-2">
+                        <label for="select-3d8d" class="u-form-control-hidden u-label u-text-body-color u-label-2">Seleccionar</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="seleccion_programa" name="programa" onchange="busqueda1('seleccion_programa', 'seleccion_materias')" class="u-border-2 u-border-grey-30 u-input u-input-rectangle u-text-body-color u-input-2">
+
+                            </select>                            
+                        </div>
+                    </div><br>
+                    <div class="u-form-group u-form-select u-form-group-3">
+                        <label for="select-6da1" class="u-form-control-hidden u-label u-text-body-color u-label-3">Seleccionar</label>
+                        <div class="u-form-select-wrapper">
+                            <select id="seleccion_materias"  name="select-2" class="u-border-2 u-border-grey-30 u-input u-input-rectangle u-text-body-color u-input-3">
+                                <option value="null">Materia</option>
+                            </select>                         
+                        </div>
+                    </div><br>
+                    <div class="u-form-group u-form-submit">
+                        <a onclick="buscar()" href="#mainn" class="u-active-grey-5 u-btn u-btn-round u-btn-submit u-button-style u-grey-5 u-hover-grey-60 u-radius-23 u-text-active-black u-text-black u-text-hover-white u-btn-1">BUSCAR</a>                            
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="u-clearfix u-valign-middle u-section-3" id="sec-2620">
+            <div class="u-clearfix u-expanded-width u-gutter-14 u-layout-wrap u-layout-wrap-1">
+                <div class="u-layout">
+                    <div class="u-layout-row">
+
+                        <!--filtros-->
+                        <div class="u-container-style u-layout-cell u-size-10 u-layout-cell-1">
+                            <div class="u-container-layout u-valign-top u-container-layout-1">
+                                <h4 class="u-text u-text-default u-text-1">Filtros de búsqueda</h4>
+
+                                <!--filtro año publicacion-->
+                                <p class="u-text u-text-default u-text-2">Año de Publicación</p><br>
+                                <div style="padding: 8px;" class="u-form u-form-1">
+                                    <div class="u-form-group u-form-radiobutton u-form-group-1">
+                                        <div class="u-form-radio-button-wrapper">
+                                            <input type="radio" name="radiobutton" onclick="filterYear(this.value)" value="2019">
+                                            <label class="u-label u-label-1" for="radiobutton">2019</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" onclick="filterYear(this.value)" value="2020">
+                                            <label class="u-label u-label-2" for="radiobutton">2020</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" onclick="filterYear(this.value)" value="2021">
+                                            <label class="u-label u-label-3" for="radiobutton">2021</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" onclick="filterYear(this.value)" value="2022">
+                                            <label class="u-label u-label-4" for="radiobutton">2022</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" onclick="filterYear(this.value)" value="2023">
+                                            <label class="u-label u-label-5" for="radiobutton">2023</label>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="u-align-center u-form-group u-form-submit">
+                                        <hr>
+                                    </div>  
+                                </div>
+
+                                <!--filtro tipo documento-->
+                                <p class="u-text u-text-default u-text-3">Tipo de documento</p>
+                                <div style="padding: 8px;" class="u-expanded-width u-form u-form-2">
+                                    <div class="u-form-group u-form-radiobutton u-form-group-3">
+                                        <div class="u-form-radio-button-wrapper">
+                                            <input type="radio" name="radiobutton" value="Hoja de Texto" required="required">
+                                            <label class="u-label u-label-6" for="radiobutton">Hoja de Texto</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" value="Hoja de Cálculo" required="required">
+                                            <label class="u-label u-label-7" for="radiobutton">Hoja de Cálculo</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" value="Presentación" required="required">
+                                            <label class="u-label u-label-8" for="radiobutton">Presentación</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" value="Imagen" required="required">
+                                            <label class="u-label u-label-9" for="radiobutton">Imagen</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" value="Video" required="required">
+                                            <label class="u-label u-label-10" for="radiobutton">Video</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" value="Enlace" required="required">
+                                            <label class="u-label u-label-11" for="radiobutton">Enlace</label>
+                                            <br>
+                                            <input type="radio" name="radiobutton" value="Otro" required="required">
+                                            <label class="u-label u-label-12" for="radiobutton">Otro</label>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="u-align-center u-form-group u-form-submit">
+                                        <hr>
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--seccion resultados TABLA-->                          
+                        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                            <br><br>
+                            <div class="container-fluid">
+                                <div class="row">      
+                                    <!--TABLE FILTER-->    
+                                    <br>                    
+                                    <div class="table-responsive">
+                                        <table id="table1" class="table table-striped table-bordered" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>Resultados...</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>  
+                                </div>
+                            </div>
+                            <br><br>
+                        </main>
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-6d9b"><div class="u-clearfix u-sheet u-sheet-1">
+                <p class="u-small-text u-text u-text-variant u-text-1">&copy; 2020. Todos los derechos reservados<br>Desarrollado por Angel Vivas &amp; Ana Cardenas<br>Estudiantes ingeniería de sistemas<br>Universidad Francisco de Paula Santander
+                </p>
+            </div>
+        </footer> 
+
+        <script class="u-script" type="text/javascript" src="js/jquery.js" defer=""></script>
+        <script class="u-script" type="text/javascript" src="js/nicepage.js" defer=""></script>              
+        <script class="u-script" type="text/javascript" src="js/google-signin.js" defer=""></script>
+        <script class="u-script" type="text/javascript" src="js/busquedas.js" defer=""></script>  
+        <script class="u-script" type="text/javascript" src="js/table.js" defer=""></script>
+        <script class="u-script" type="text/javascript" src="js/dataTables.bootstrap4.min.js" defer=""></script> 
+        <script>
+            $(document).ready(function () {
+                busqueda("seleccion_programa");
+                $('#table1').DataTable();
+            });
+        </script>
+
+    </body>
+</html>
